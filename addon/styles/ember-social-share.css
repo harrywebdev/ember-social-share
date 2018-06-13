@@ -85,12 +85,16 @@
 .email-share-button {
   background-color: #666666;
   border: 1px solid #666666;
+  top: 0;
 }
 
-.email-share-button span,
 .email-share-button a {
-  color: white;
   text-decoration: none;
+  color: white;
+}
+
+.email-share-button svg {
+  padding: 0 0 0 4px;
 }
 
 .share-panel {
