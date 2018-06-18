@@ -5,9 +5,7 @@ export default ShareButton.extend({
   layout,
   classNames: ['email-share-button', 'share-button'],
 
-  recipient: '',
-  subject: '',
   body: '',
-  title: ''
-
+  recipient: '',
+  subject: ''
 });
