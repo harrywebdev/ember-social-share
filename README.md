@@ -19,11 +19,12 @@ First, you can add share buttons one by one. Example:
     {{#twitter-share-button}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button}}Share{{/linkedin-share-button}}
     {{#gplus-share-button}}Share{{/gplus-share-button}}
+    {{#email-share-button}}Share{{/email-share-button}}
     {{#reddit-share-button}}Share{{/reddit-share-button}}
 
 Or you can add share buttons like one share panel:
 
-    {{share-panel buttons="fb,vk,twitter,linkedin,gplus" labels="Share,Share,Tweet,Share,Share"}}
+    {{share-panel buttons="fb,vk,twitter,linkedin,gplus,email,reddit" labels="Share,Share,Tweet,Share,Share"}}
 
 There are some properties for any of share buttons:
 
@@ -47,6 +48,7 @@ image | image url | &#10005; | &#10003; | &#10005; | &#10005; | &#10005; | &#100
 hashtags | comma-separated list of hashtags (Facebook only uses the first one) | &#10003; | &#10005; | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; |
 via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003; | &#10005; | &#10005; | &#10005; |
 quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; | &#10005; | &#10005; |
+recipient | mail receiver | &#10005; | &#10005; | &#10005; | &#10005; | &#10005; | &#10003; | &#10005; |
 
 ## Example
 
@@ -55,6 +57,7 @@ quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005;
     {{#twitter-share-button title="Look at this!" url="http://example.com" hashtags="example" via="example.com"}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button title="Great artile!" text="Another description" image="some image url"}}Share it!{{/linkedin-share-button}}
     {{#gplus-share-button url="http://example.com"}}Share{{/gplus-share-button}}
+    {{#email-share-button recipient="test@example.com" title="Test subject" text="Test email"}}Send to email{{/email-share-button}}
     {{#reddit-share-button title="Check this out!" url="http://example.com"}}Share{{/reddit-share-button}}
 
 
